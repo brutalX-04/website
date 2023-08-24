@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <form action="">
+        <label for="nama">Nama</label>
+        <input type="text" name="nama" id="nama">
+        <br>
+        <label for="pesan">Pesan</label>
+        <textarea name="pesan" id="pesan" cols="30" rows="10"></textarea>
+        <button type="submit">Kirim</button>
+    </form>
+</body>
+<script>
+    const nama = document.querySelector('form input#nama')
+    const pesan = document.querySelector('form textarea#pesan')
+    const btn = document.querySelector('form')
+
+    const api = "5693745360:AAHuhUjDkuauwodR52XNzE3mJiD6Yn7rnQc"
+    const chat_id = "5511869986"
+
+    btn.addEventListener('submit' , e => {
+        const send = fetch(`https://api.telegram.org/bot${api}/sendMessage?chat_id=${chat_id}&text=Nama :%0A${nama.value} %0A%0APesan : %0A${pesan.value}`,
+            { method: "POST" }
+        )
+    })
+</script>
+</html>

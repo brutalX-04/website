@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+    integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<title>
+		brutal_ID
+	</title>
+</head>
+<body>
+	<header>
+		<h3 class="logo">XMod</h3>
+		<div>
+			<nav>
+				<ul><li><a class="head-nav" href="profile.html">profil</a></li></ul>
+				<ul><li><a href="contack.html">Contak</a></li></ul>
+				<ul><li><a href="more.html">More</a></li></ul>
+			</nav>
+		</div>
+	</header>
+	<div class="awak">
+	<div class="container">
+		<div class="intro">
+			<p class="title">Hello !<br>Welcome To<br>My Mini Website<br>I'm Xmod</p>
+			<div class="foto-1">
+				<img src="png/brutal.gif" alt="request eror" class="img-foto"/>
+			</div>
+			<p class="text">Website Ini Di Buat Untuk Belajar Html, Css, Js<br>Clik Button Di Bawah Untuk Kirim Pesan</p>
+			<div class="card-musik">
+				<p class="title2">Musik Ngab</p>
+				<audio id="audio" controls hidden>
+					<source src="musik/brutal.mp3" type="audio/mpeg">
+				</audio>
+				<div>
+					<button class="musik fa fa-play" id="play"></button>
+					<button class="musik fa fa-pause" id="pause"></button>
+				</div>
+			</div>
+			<div class="pesan">
+				<p class="title-pesan">Kirim pesan anonymous</p>
+				<form>
+			        <input type="text" id="nama" placeholder="Nama" />
+			        <input type="text" id="pesan" placeholder="Pesan" />
+			        <input class="button" type="submit" id="kirim" value="KIRIM" onclick="kirimPesan()" />
+			    </form>
+			</div>
+		</div>
+	</div>
+	<div class="parallax">
+		<div class="tentang">
+			<p class="text">Saya Adallah Seorang <span id="saha"></span></p>
+			<p class="text">Tapi Terkadang Saya Suka Menjadi Beban </p>
+		<div class="btn">
+			<button class="btn-1" onclick="btn()">Game ?</button>
+		</div>
+		</div>
+		<div class="kata2">
+			<p class="motiv">Motivasi</p>
+		</div>
+		<div class="container1">
+			<div class="card">
+				<div class="card-item">
+					<p class="text">*Agama</p>
+					<p class="text">Hal pertama yang harus kita perhatikan adallah Agama karna itu nomer 1</p>
+				</div>
+				<div class="card-item">
+					<p class="text">*Semangat</p>
+					<p class="text">Sebagai manusia kita harus menanamkan rasa semangat di dalam diri kita </p>
+				</div>
+				<div class="card-item">
+					<p class="text">*Belajar</p>
+					<p class="text">Belajar adallah sesuatu yang mengubah kita dari tidak bisa menjadi bisa</p>
+				</div>
+		</div>
+		</div>
+	</div>
+	</div>
+	<div class="bawah">
+		<p class="text-bawah">Copyright © <script type="text/javascript">document.write(new Date().getFullYear()) </script> by Brutal_ID</p>
+	</div>
+	<script type="text/javascript" charset="utf-8">
+		function btn() {
+			alert("My Game \n\nFREE FIRE\nMOBILE LEGENDS\nPUBG MOBILE\n\nDLL");
+		};
+		var pla = document.getElementById("play");
+		var paus = document.getElementById("pause");
+		var audio = document.getElementById("audio");
+		pla.addEventListener("click", function (){
+			audio.play();
+		});
+		paus.addEventListener("click", function (){
+			audio.pause();
+		});
+
+		new Typed('#saha', {
+			strings: ['Gamers', 'Develover','Editor', "Design"],
+			typeSpeed: 60,
+			backSpeed: 70,
+			smartBackspace: true,
+			loop: true
+		});
+		function kirimPesan() {
+
+	    var nama = document.getElementById('nama');
+	    var pesan = document.getElementById('pesan');
+
+	    var gabungan = 'Nama %3A%0A   ' + nama.value + '%0APesan %3A%0A   ' + pesan.value;
+	    var token = '5693745360:AAHuhUjDkuauwodR52XNzE3mJiD6Yn7rnQc'; // Ganti dengan token bot yang kamu buat
+	    var grup = '5511869986'; // Ganti dengan chat id dari bot yang kamu buat
+
+	    $.ajax({
+        url: `https://api.telegram.org/bot${token}/sendMessage?chat_id=${grup}&text=${gabungan}&parse_mode=html`,
+        method: `POST`,
+    	});
+    	alert('Send succes');
+		};
+	</script>
+</body>
+</html>

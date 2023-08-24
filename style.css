@@ -1,0 +1,438 @@
+*,html,body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: monospace;
+}
+
+header{
+	background: #1A2238;
+	color: #eaeaea;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+}
+
+.awak{
+	margin: 15px;
+	margin-top: 0;
+	margin-bottom: 0;
+	background: #f5f5f5;
+}
+.logo{
+	margin-right: auto;
+	padding: 10px 15px;
+	cursor: pointer;
+	transition: all .2s ease 0s ;
+}
+
+.logo:hover{
+	color: orange;
+	transform: rotate(1deg);
+}
+
+nav{
+	display: flex;
+}
+
+.button1{
+    margin: 10px;
+    width: 120px;
+    padding: 5px 5px 7px 5px;
+    background: #1A2238;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    text-decoration: none;
+}
+
+li{
+	list-style-type: none;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+
+li a{
+	transition: all .2s ease 0s ;
+	display: inline-block;
+}
+
+li a:hover{
+	color: orange;
+	transform: rotate(1deg);
+}
+
+a{
+	color: #eaeaea;
+	text-decoration: none;
+}
+
+.container{
+	font-family: monospace;
+
+}
+
+.container-profile{
+	font-family: monospace;
+	margin: 10px;
+	min-height: 100vh;
+
+}
+
+.container1{
+	max-width: 1200px;
+	margin: auto;
+}
+
+.intro{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 10px;
+	text-align: center;
+}
+
+.title{
+	font-size: 20px;
+	font-weight: bold;
+	font-style: italic;
+	gap: 1px;
+	margin-top: 20px;
+}
+
+.text{
+	font-size: 15px;
+	padding: 5px;
+}
+
+.foto-1{
+	padding: 15px;
+}
+
+.img-foto{
+	width: 100%;
+	max-width: 200px;
+	height: auto;
+	border-radius: 10px;
+	box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.parallax{
+	background-image: url(png/brutal.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	height: 100vh;
+	width: auto;
+	max-width: auto;
+	background-repeat: no-repeat;
+}
+
+.tentang{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	background: #1A2238;
+	color: #eaeaea;
+	padding: 20px;
+}
+
+.btn-1{
+	align-items: center;
+	border-radius: 5px;
+	padding: 5px;
+	background: orange;
+}
+
+.btn{
+	margin-top: 10px;
+}
+
+.card{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+}
+
+.card-item{
+	background: #f8f8f8;
+	margin: 5px;
+	color: #222;
+	padding: 20px;
+	box-shadow: 2px 5px 1px rgba(0, 0, 0, 0.5);
+	border-radius: 3px;
+}
+
+.bawah{
+	background: #1A2238;
+	padding: 5px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	color: #eaeaea;
+	font-size: 12px;
+}
+
+.kata2{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	margin: 15px;
+	background: #1A2238;
+	color: #eaeaea;
+}
+
+.motiv{
+	text-align: center;
+	padding: 5px;
+	width: 25%;
+}
+
+.profile{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	margin-bottom: 20px;
+}
+
+.png-profile{
+	height: auto;
+	margin: 20px;
+	width: 150px;
+	max-width: 150px;
+	border-radius: 50%;
+}
+
+.png-more{
+	max-width: 100px;
+	min-width: 20px;
+	border-radius: 5px;
+}
+
+.content-more{
+	width: auto;
+}
+
+.box-more{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+	gap: 10px;
+}
+
+.more-text{
+	padding: 10px;
+}
+
+.nama-profile{
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: monospace;
+}
+
+.text-profile{
+	font-size: 12px;
+	font-family: monospace;
+	gap: 5px;
+
+}
+
+.text-head{
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px;
+}
+
+.content{
+	background: #f3f3f3;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+.text-conten{
+	padding: 10px;
+	font-size: 13px;
+	margin: 5px;
+	font-weight: bold;
+}
+
+.bahasa{
+	padding: 3px;
+}
+
+.progres{
+	border-radius: 4px;
+	height: 1rem;
+	overflow: hidden;
+	font-size: .75rem;
+	background-color: #F0F8FF;
+}
+
+.progres-bar{
+	display: flex;
+	flex-direction: column;
+	height: 1rem;
+	overflow: hidden;
+	text-align: center;
+	white-space: nowrap;
+	color: #fff;
+	background-color: blue;
+	transition: width .6s ease;
+}
+
+.head-contak{
+	text-align: center;
+	font-weight: bold;
+	padding: 25px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.head-more{
+	text-align: center;
+	align-items: center;
+	align-content: center;
+	font-weight: bold;
+	margin: 25px;
+	gap: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.button-more{
+	box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+	padding: 3px;
+	margin-left: center;
+}
+
+.box-contak{
+	box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.3);
+	padding: 15px;
+	border-radius: 10px;
+	background: #f5f5f5;
+	margin: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.contak-link{
+	text-decoration: none;
+	color: blue;
+	margin: 5px;
+	padding: 2px;
+	border-radius: 4px;
+}
+.button-contak{
+	margin: 15px;
+	padding: 2px;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.link-contak{
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.title-contak{
+	font-weight: bold;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.musik{
+	background: #1A2238;
+	padding: 4px;
+	border-radius: 2px;
+	font-size: 2px;
+	border: none;
+	color: #FEFCFF;
+	box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+
+.title2{
+	font-weight: bold;
+	font-size: 15px;
+	padding: 5px;
+}
+
+.pesan {
+	background-color: #1A2238;
+	padding: 10px;
+	border-radius: 5px;
+	border: 2px solid #cecece;
+	margin-bottom: 10px;
+}
+
+form {
+	width: 300px;
+}
+
+input[type="text"] {
+    width: 200px;
+    outline: none;
+    padding: 7px 5px 7px 5px;
+    border: 2px solid #cecece;
+    background: none;
+    margin: 5px;
+    border-radius: 5px;
+    color: #cecece;
+    text-align: center;
+}
+
+input[type="text"]:focus {
+    border: 2px solid cyan;
+    outline: none;
+    text-align: center;
+}
+
+.button{
+    width: 150px;
+    padding: 7px 5px 7px 5px;
+    background: #0084ff;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+
+.title-pesan {
+	color: #fff;
+	font-size: 15px;
+	padding: 5px;
+	font-weight: bold;
+}
+
+.card-musik {
+	border: 2px solid #1A2238;
+	border-radius: 3px;
+	padding-bottom: 5px;
+	margin: 10px;
+}
+
